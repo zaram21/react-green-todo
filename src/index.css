@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   font-family: "Poppins", sans-serif;
+   background: linear-gradient(160deg, #f0fdf4, #dcfce7);
+   transition: all .4s ease;
+}
+
+*{
+   transition: all 0.3s ease-in-out;
+}
+
+.card{
+   background: #fff;
+   border-radius: 1rem;
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+   transform: translateY(-4px);
+   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn-green{
+   @apply bg-emerald-500 text-white rounded-md hover:bg-emerald-600 transition-colors
+}
